@@ -2,7 +2,7 @@ import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material";
 import { IconButton, Stack } from "@mui/material";
 import { Footer } from "../components/Footer";
 import { Question } from "../components/Question";
-import { useQuestionsStore } from "../store/useQuestions";
+import { useQuestionsStore } from "../store/useQuestionsStore";
 
 export const Game = () => {
   const questions = useQuestionsStore((state) => state.questions);

@@ -2,7 +2,7 @@ import { Container, Stack, Typography } from "@mui/material";
 import "./App.css";
 import { JavaScriptLogo } from "./logo";
 import { Game, Start } from "./pages";
-import { useQuestionsStore } from "./store/useQuestions";
+import { useQuestionsStore } from "./store/useQuestionsStore";
 
 const App = () => {
   const questions = useQuestionsStore((state) => state.questions);
@@ -22,7 +22,6 @@ const App = () => {
           <JavaScriptLogo />
         </Stack>
 
-        {/* PAGES */}
         {questions.length === 0 && <Start />}
         {questions.length > 0 && <Game />}
       </Container>

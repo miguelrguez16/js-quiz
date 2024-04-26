@@ -1,4 +1,4 @@
-import { useQuestionsStore } from "../store/useQuestions";
+import { useQuestionsStore } from "../store/useQuestionsStore";
 
 export const useQuestionsData = () => {
   const questions = useQuestionsStore((state) => state.questions);

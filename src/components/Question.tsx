@@ -10,7 +10,7 @@ import { type Question as QuestionType } from "../types";
 
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { gradientDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { useQuestionsStore } from "../store/useQuestions";
+import { useQuestionsStore } from "../store/useQuestionsStore";
 
 const getBackground = (info: QuestionType, answerIndex: number) => {
   const { userSelectedAnswer, correctAnswer } = info;
