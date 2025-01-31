@@ -6,7 +6,6 @@ import { useQuestionsStore } from "./store/useQuestionsStore";
 
 const App = () => {
   const questions = useQuestionsStore((state) => state.questions);
-  console.log(questions);
   return (
     <main>
       <Container maxWidth="sm">
